@@ -46,3 +46,15 @@ The pipeline includes multiple stages: Data preparation and quality control, Gen
 - **Output**: Hybrid assembly files in `assembly/unicycler/hybrid/`
 
 ### 3. Assembly Optimization and Refinement
+#### Read Mapping and Unitig Assembly
+- **Script**: `minimap2_test.sh`
+- **Objective**: Quick assembly using Minimap2 and Miniasm for read overlaps and unitig generation.
+- **Input**: `merged.fastq.gz` (merged long-read data)
+- **Output**: Minimap and Miniasm output files in `../result/minimap2/`
+
+### 4. Assembly Quality Assessment
+#### QUAST Analysis
+- **Script**: `quast.sh`
+- **Objective**: Evaluate and compare the quality of different assemblies.
+- **Input**: Assembled genomes (`minimap2_long.fasta`, `unicycler_hybrid.fasta`, etc.)
+- **Output**: QUAST analysis reports in `quast/`
