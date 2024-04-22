@@ -1,5 +1,12 @@
 # LIFE4136 Rotation 1 Group 3
-Welcome to the Github Repository dedicated to Rotation 1 of LIFE4136: Bioinformatics Group Research Project, of the MSc Bioinformatics at University of Nottingham 2023/2024. 
+Welcome to the Github Repository dedicated to Rotation 1 of LIFE4136: Bioinformatics Group Research Project, of the MSc Bioinformatics at University of Nottingham 2023/2024.
+
+## What is the problem we have been presented with?
+You need to determine the genomic changes in various strains of a micro-organism from provided sequencing data. This involves assembling genomes from both short (Illumina) and long (Nanopore) read data, and then analyzing these assemblies to identify mutations and impacted biological functions.
+
+## What are the objectives of our study?
+
+## What are the expected outcomes?
 
 # Prerequisites
 ## Files and Data required
