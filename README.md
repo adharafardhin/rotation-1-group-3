@@ -1,6 +1,15 @@
 # LIFE4136 Rotation 1 Group 3
 Welcome to the Github Repository dedicated to Rotation 1 of LIFE4136: Bioinformatics Group Research Project, of the MSc Bioinformatics at University of Nottingham 2023/2024. 
 
+# Prerequisites
+## Files and Data required
+- Short Reads: Illumina Data
+- Long Reads: Nanopore Data
+## Tool versions and links
+
+## Tools installation
+
+## Script Description
 # Genome Assembly and Analysis Pipeline
 This respository provides a comprehensive suite of scripts designed for the assembly and analysis of genomic data derived from both short-read (Illumina) and long-read (Nanopore) sequencing technologies. Our pipeline is crafted to support detailed exploration and modification of microbial genomes, making it possible to identify genetic modifications across various strains. Below you will find detailed instructions on how to deploy and utilize our pipeline, including descriptions of each script, their inputs and outputs, and the order in which to run them for optimal results.
 
@@ -58,3 +67,34 @@ The pipeline includes multiple stages: Data preparation and quality control, Gen
 - **Objective**: Evaluate and compare the quality of different assemblies.
 - **Input**: Assembled genomes (`minimap2_long.fasta`, `unicycler_hybrid.fasta`, etc.)
 - **Output**: QUAST analysis reports in `quast/`
+
+#### BUSCO Analysis
+- **Script**: `busco.sh`
+- **Objective**: Assess the completeness of the assemblies using BUSCO.
+- **Input**: Fasta files of assemblies (`*.fasta`)
+- **Output**: BUSCO reports in `../../busco/`
+
+### 5. Genomic Annotation
+#### Prokka Annotation
+- **Script**: `prokka_test.sh`
+- **Objective**: Annotate the assembled genomes to identify genes and other features.
+- **Input**: `assembly.fasta`
+- **Output**: Annotation files in `/workhere/students_2023/group3/prokka/10`
+
+## Usage
+
+To run each script, ensure that the SLURM job scheduler is used with the provided settings. Modify paths and parameters as necessary to fit your computational environment.
+
+## Requirements
+
+This pipeline requires a high-performance computing environment with SLURM, access to Conda environments, and installed bioinformatics tools such as Unicycler, Prokka, QUAST, BUSCO, and NanoPlot.
+
+## License
+
+
+## Authors
+Group 3: 
+- Adhara Fardhin Dhruba
+- Deniz Totuk
+- Yuyun 
+
