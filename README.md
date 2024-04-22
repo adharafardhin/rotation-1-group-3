@@ -25,3 +25,24 @@ The pipeline includes multiple stages: Data preparation and quality control, Gen
 - **Objective**: Generate quality control plots using NanoPlot to assess sequencing data quality.
 - **Input**: Merged FASTQ files (`*.fastq.gz`)
 - **Output**: QC plot files in `../result/NanoPlot_QCresult/`
+
+### 2. Genome Assembly
+#### Long Read Assembly
+- **Scripts**: `unicycler_long.sh`, `long03.sh`, `long09.sh`, `long10.sh`
+- **Objective**: Assemble genomes using long-read Nanopore data for various barcodes.
+- **Input**: `merged_long_*.fastq.gz` (merged long-read data for barcodes 03, 09, 10)
+- **Output**: Genome assembly files in corresponding result directories (`/2nd_longreads/result/03/`, `/2nd_longreads/result/09/`, `/2nd_longreads/result/10/`)
+
+#### Short Read Assembly
+- **Script**: `unicycler_short.sh`
+- **Objective**: Assemble genomes using short-read Illumina data.
+- **Input**: `H3931_S3_L001_R1_001.fastq.gz`, `H3931_S3_L001_R2_001.fastq.gz`
+- **Output**: Genome assembly files in `../result/unicycler/single_pair/`
+
+#### Hybrid Assembly
+- **Script**: `uni_hybrid.sh`
+- **Objective**: Perform hybrid assemblies using both short and long reads.
+- **Input**: Short reads (`H3931_S3_L001_R1_001.fastq.gz`, `H3931_S3_L001_R2_001.fastq.gz`), Long reads (`merged.fastq.gz`)
+- **Output**: Hybrid assembly files in `assembly/unicycler/hybrid/`
+
+### 3. Assembly Optimization and Refinement
