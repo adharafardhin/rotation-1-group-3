@@ -2,7 +2,7 @@
 Welcome to the Github Repository dedicated to Rotation 1 of LIFE4136: Bioinformatics Group Research Project, of the MSc Bioinformatics at University of Nottingham 2023/2024.
 
 ## What is the problem we have been presented with?
-You need to determine the genomic changes in various strains of a micro-organism from provided sequencing data. This involves assembling genomes from both short (Illumina) and long (Nanopore) read data, and then analyzing these assemblies to identify mutations and impacted biological functions.
+The problem we face in this project centers on the complex task of identifying and understanding genetic modifications in strains of a micro-organism whose genomes have been altered. These modifications are unknown in terms of their nature and location, posing significant challenges for genetic mapping and characterization. We are provided with a mixture of sequencing data, including short-read (Illumina) and long-read (Nanopore) data, which differ in their accuracy and coverage capabilities. The challenge lies in effectively using this data to assemble the genomes and pinpoint the genetic changes, thereby facilitating a deeper understanding of the biological functions these modifications may affect.
 
 ## What are the objectives of our study?
 
@@ -17,6 +17,23 @@ You need to determine the genomic changes in various strains of a micro-organism
 ## Tools installation
 
 ## Script Description
+| Script Name             | Description                                                                                                  | Input                                        | Output                                       |
+|-------------------------|--------------------------------------------------------------------------------------------------------------|----------------------------------------------|----------------------------------------------|
+| `merge_reads.sh`        | Merges multiple FASTQ files from the same read direction into single files to simplify data handling.        | `*R1_001.fastq.gz`, `*R2_001.fastq.gz`       | `merged_R1.fastq.gz`, `merged_R2.fastq.gz`   |
+| `mynanoplotenv.sh`      | Sets up a conda environment specifically for running NanoPlot, including necessary package installations.    | None                                         | Conda environment ready for NanoPlot         |
+| `plotQC_yuyun.sh`       | Generates quality control plots using NanoPlot to assess the quality of the sequencing data.                 | Merged FASTQ files (`*.fastq.gz`)            | QC plot files                                |
+| `unicycler_long.sh`     | Assembles genomes using long-read Nanopore data.                                                             | Merged long-read FASTQ files                 | Genome assembly files                        |
+| `long03.sh`             | Similar to `unicycler_long.sh`, for specific barcode data.                                                   | Merged long-read FASTQ for barcode 03        | Genome assembly files for barcode 03         |
+| `long09.sh`             | Similar to `unicycler_long.sh`, for specific barcode data.                                                   | Merged long-read FASTQ for barcode 09        | Genome assembly files for barcode 09         |
+| `long10.sh`             | Similar to `unicycler_long.sh`, for specific barcode data.                                                   | Merged long-read FASTQ for barcode 10        | Genome assembly files for barcode 10         |
+| `unicycler_short.sh`    | Assembles genomes using short-read Illumina data.                                                            | Paired-end Illumina FASTQ files              | Genome assembly files                        |
+| `uni_hybrid.sh`         | Performs hybrid assemblies using both short and long reads.                                                  | Short and long-read FASTQ files              | Hybrid genome assembly files                 |
+| `minimap2_test.sh`      | Uses Minimap2 and Miniasm for quick assembly of long reads, mapping reads onto themselves.                    | Merged long-read FASTQ file                  | Minimap and Miniasm output files             |
+| `quast.sh`              | Evaluates the quality of various genome assemblies using QUAST.                                              | Assembled genome files                       | QUAST analysis reports                       |
+| `busco.sh`              | Assesses the completeness of genome assemblies using BUSCO.                                                  | Assembled genome FASTA files                 | BUSCO analysis reports                       |
+| `prokka_test.sh`        | Annotates the assembled genomes to identify genes and other features using Prokka.                           | Assembled genome FASTA file                  | Annotation files                             |
+
+
 # Genome Assembly and Analysis Pipeline
 This respository provides a comprehensive suite of scripts designed for the assembly and analysis of genomic data derived from both short-read (Illumina) and long-read (Nanopore) sequencing technologies. Our pipeline is crafted to support detailed exploration and modification of microbial genomes, making it possible to identify genetic modifications across various strains. Below you will find detailed instructions on how to deploy and utilize our pipeline, including descriptions of each script, their inputs and outputs, and the order in which to run them for optimal results.
 
