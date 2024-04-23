@@ -1,13 +1,13 @@
 # LIFE4136 Rotation 1 Group 3
 Welcome to the Github Repository dedicated to Rotation 1 of LIFE4136: Bioinformatics Group Research Project, of the MSc Bioinformatics at University of Nottingham 2023/2024.
 
-## What is the problem we have been presented with?
+## Introduction
 The problem we face in this project centers on the complex task of identifying and understanding genetic modifications in strains of a micro-organism whose genomes have been altered. These modifications are unknown in terms of their nature and location, posing significant challenges for genetic mapping and characterization. We are provided with a mixture of sequencing data, including short-read (Illumina) and long-read (Nanopore) data, which differ in their accuracy and coverage capabilities. The challenge lies in effectively using this data to assemble the genomes and pinpoint the genetic changes, thereby facilitating a deeper understanding of the biological functions these modifications may affect.
 
-## What are the objectives of our study?
+## Objectives of our study
 The objective of our study is to develop a comprehensive bioinformatics pipeline that utilizes both short-read (Illumina) and long-read (Nanopore) sequencing data to assemble and analyze microbial genomes. By doing so, we aim to accurately identify and characterize genetic modifications in various strains of a micro-organism. These insights will enable us to determine the locations and functions of these genetic alterations, enhancing our understanding of microbial genetics and its implications for health, disease, and industrial applications. Through this project, we seek to streamline the genomic assembly process, improve the accuracy of genetic modification detection, and provide a robust toolset for researchers in the field of microbial genomics.
 
-## What are the expected outcomes?
+## Expected outcomes
 The expected outcomes of our study are to accurately assemble and annotate the genomes of various genetically modified strains of a micro-organism, identifying precisely where and what changes have occurred at the genetic level. We aim to determine how these modifications impact the organism's biological functions, providing insights into potential alterations in metabolic pathways or resistance mechanisms. By effectively utilizing a combination of short-read and long-read sequencing data, the pipeline is expected to overcome common challenges associated with genomic assembly, such as resolving complex genomic regions and bridging gaps that single-method approaches might miss.
 
 This project also result in a set of robust tools and protocols that can be adapted for similar genomic studies, enhancing our ability to tackle complex bioinformatics challenges in microbial genomics. Furthermore, documenting and sharing detailed findings through this repository will contribute to the broader scientific community, promoting further research and collaboration in the field of genetic engineering and microbial analysis.
