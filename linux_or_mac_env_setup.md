@@ -50,4 +50,8 @@
      conda install numpy scipy matplotlib
      ```
 
-Note: Miniconda comes with its own Python interpreter. When you install Miniconda, you're also installing a default version of Python, managed by Conda. This setup helps ensure that your Python environment is consistent with the packages and dependencies managed by Conda.
+**General notes:**
+- Miniconda comes with its own Python interpreter. When you install Miniconda, you're also installing a default version of Python, managed by Conda. This setup helps ensure that your Python environment is consistent with the packages and dependencies managed by Conda.
+- **Miniconda vs. Anaconda**: Miniconda provides a minimal base installation of Conda, allowing more granular control over package installations, which is preferred for ensuring a lightweight and clean environment.
+- **Using Different Python Versions**: You can specify a different version of Python if required by changing the version number in the `conda create` command.
+- **Command Line Tools**: Ensure that command line tools are available in your PATH to use Miniconda from your terminal.
