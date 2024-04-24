@@ -20,7 +20,10 @@ This project also result in a set of robust tools and protocols that can be adap
 
 ## Environment Setup
 
-Before running the scripts in this repository, it's essential to set up a proper environment including Python and Miniconda. Below are the detailed instructions for setting up Miniconda on Windows and Linux/macOS.
+Before running the scripts in this repository, it's essential to set up a proper environment including Python and Miniconda. The setup instructions for the respective environment can be found as follows:
+
+- Windows environment: [windows_env_setup](https://github.com/adharafardhin/rotation-1-group-3/blob/main/windows_env_setup.md) file
+- Linux/MacOS environment: [linux_or_mac_env_setup](https://github.com/adharafardhin/rotation-1-group-3/blob/main/linux_or_mac_env_setup.md) file
 
 ## Tool versions and links
 
