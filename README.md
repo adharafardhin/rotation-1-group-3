@@ -16,7 +16,19 @@ This project also result in a set of robust tools and protocols that can be adap
 ## Files and Data required
 - Short Reads: Illumina Data
 - Long Reads: Nanopore Data
+  
 ## Tool versions and links
+
+This project utilizes several key bioinformatics tools that are crucial for genome assembly and analysis. The following table lists these tools along with their versions and links to their official documentation or home pages.
+
+| Tool Name  | Version | Link                                         |
+|------------|---------|----------------------------------------------|
+| Unicycler  | 0.4.8   | [Unicycler](https://github.com/rrwick/Unicycler) |
+| NanoPlot   | 1.32.1  | [NanoPlot](https://github.com/wdecoster/NanoPlot) |
+| QUAST      | 5.0.2   | [QUAST](http://quast.sourceforge.net/quast)   |
+| BUSCO      | 4.1.2   | [BUSCO](https://busco.ezlab.org/)            |
+| Prokka     | 1.14.6  | [Prokka](https://github.com/tseemann/prokka) |
+| Minimap2   | 2.17    | [Minimap2](https://github.com/lh3/minimap2)  |
 
 ## Tools installation
 
