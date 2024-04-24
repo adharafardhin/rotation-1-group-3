@@ -15,8 +15,8 @@ This project also result in a set of robust tools and protocols that can be adap
 # Prerequisites
 
 ## Files and Data required
-- Short Reads: Illumina Data
-- Long Reads: Nanopore Data
+- Short Reads: **Illumina** Data
+- Long Reads: **Nanopore** Data
 
 ## Environment Setup
 
@@ -39,6 +39,12 @@ This project utilizes several key bioinformatics tools that are crucial for geno
 | Minimap2   | 2.28    | [Minimap2](https://github.com/lh3/minimap2)  |
 
 ## Tools installation
+
+A conda environment (named 'myenv' was already created during the environment setup). If not created yet, we can create a new conda environment using the following command:
+
+conda create -n bioinfo_env python=3.8
+conda activate bioinfo_env
+
 
 ## Script Description
 
