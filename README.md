@@ -42,9 +42,38 @@ This project utilizes several key bioinformatics tools that are crucial for geno
 
 A conda environment (named 'myenv' was already created during the environment setup). If not created yet, we can create a new conda environment using the following command:
 
+```
 conda create -n bioinfo_env python=3.8
 conda activate bioinfo_env
+```
 
+### Install required tools using commands:
+
+```
+conda install -c bioconda unicycler=0.5.0
+conda install -c bioconda nanoplot=1.42.0
+conda install -c bioconda quast=5.2.0
+conda install -c bioconda busco=5.7.1
+conda install -c bioconda prokka=1.14.6
+conda install -c bioconda minimap2=2.28
+```
+
+### Verify installation
+
+```
+unicycler --version
+NanoPlot --help
+quast --version
+busco --version
+prokka --version
+minimap2 --version
+```
+
+Note: If any dependency related issues are faced during installation, the following code can be used and then the installation steps can be carried out again.
+
+```
+conda update conda
+```
 
 ## Script Description
 
