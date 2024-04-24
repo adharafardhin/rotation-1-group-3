@@ -138,7 +138,7 @@ To run each script, ensure that the SLURM job scheduler is used with the provide
 
 ## Authors
 Group 3: 
-- Adhara Fardhin Dhruba
-- Deniz Totuk
-- Yuyun 
+- Adhara Fardhin Dhruba (mbxad11@nottingham.ac.uk)
+- Deniz Totuk (mbxdt3@nottingham.ac.uk)
+- Yuyun WU (mbxyw1@nottingham.ac.uk)
 
