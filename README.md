@@ -216,10 +216,6 @@ The pipeline includes multiple stages: Data preparation and quality control, Gen
 
 To run each script, ensure that the SLURM job scheduler is used with the provided settings. Modify paths and parameters as necessary to fit your computational environment.
 
-## Requirements
-
-This pipeline requires a high-performance computing environment with SLURM, access to Conda environments, and installed bioinformatics tools such as Unicycler, Prokka, QUAST, BUSCO, and NanoPlot.
-
 ## License
 
 
