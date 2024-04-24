@@ -31,16 +31,19 @@ This project utilizes several key bioinformatics tools that are crucial for geno
 
 | Tool Name  | Version | Link                                         |
 |------------|---------|----------------------------------------------|
-| Unicycler  | 0.4.8   | [Unicycler](https://github.com/rrwick/Unicycler) |
-| NanoPlot   | 1.32.1  | [NanoPlot](https://github.com/wdecoster/NanoPlot) |
-| QUAST      | 5.0.2   | [QUAST](http://quast.sourceforge.net/quast)   |
-| BUSCO      | 4.1.2   | [BUSCO](https://busco.ezlab.org/)            |
+| Unicycler  | 0.5.0   | [Unicycler](https://github.com/rrwick/Unicycler) |
+| NanoPlot   | 1.42.0  | [NanoPlot](https://github.com/wdecoster/NanoPlot) |
+| QUAST      | 5.2.0   | [QUAST](http://quast.sourceforge.net/quast)   |
+| BUSCO      | 5.7.1   | [BUSCO](https://busco.ezlab.org/)            |
 | Prokka     | 1.14.6  | [Prokka](https://github.com/tseemann/prokka) |
-| Minimap2   | 2.17    | [Minimap2](https://github.com/lh3/minimap2)  |
+| Minimap2   | 2.28    | [Minimap2](https://github.com/lh3/minimap2)  |
 
 ## Tools installation
 
 ## Script Description
+
+All the scripts can be found inside the scripts folder of this repository.
+
 | Script Name             | Description                                                                                                  | Input                                        | Output                                       |
 |-------------------------|--------------------------------------------------------------------------------------------------------------|----------------------------------------------|----------------------------------------------|
 | `merge_reads.sh`        | Merges multiple FASTQ files from the same read direction into single files to simplify data handling.        | `*R1_001.fastq.gz`, `*R2_001.fastq.gz`       | `merged_R1.fastq.gz`, `merged_R2.fastq.gz`   |
